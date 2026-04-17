@@ -1,0 +1,28 @@
+<div class="bilan-container">
+
+    <h1>📊 Bilan des Produits</h1>
+  
+    <!-- Message d'erreur -->
+    <p *ngIf="message" class="message-erreur">{{ message }}</p>
+  
+    <!-- Les 3 cartes -->
+    <div class="cartes">
+  
+      <div class="carte carte-min">
+        <h2>Montant Minimum</h2>
+        <p>{{ min }} Ar</p>
+      </div>
+  
+      <div class="carte carte-max">
+        <h2>Montant Maximum</h2>
+        <p>{{ max }} Ar</p>
+      </div>
+  
+      <div class="carte carte-total">
+        <h2>Montant Total</h2>
+        <p>{{ total }} Ar</p>
+      </div>
+  
+    </div>
+  
+  </div>

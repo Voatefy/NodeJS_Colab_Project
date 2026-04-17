@@ -1,0 +1,45 @@
+.bilan-container {
+    padding: 30px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .cartes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .carte {
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 200px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .carte h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .carte p {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .carte-min   { background-color: #3498db; }
+  .carte-max   { background-color: #e74c3c; }
+  .carte-total { background-color: #2ecc71; }
+  
+  .message-erreur {
+    color: red;
+    text-align: center;
+  }
