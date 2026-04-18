@@ -1,28 +1,56 @@
 <div class="bilan-container">
 
-    <h1>📊 Bilan des Produits</h1>
-  
-    <!-- Message d'erreur -->
-    <p *ngIf="message" class="message-erreur">{{ message }}</p>
-  
-    <!-- Les 3 cartes -->
-    <div class="cartes">
-  
-      <div class="carte carte-min">
-        <h2>Montant Minimum</h2>
-        <p>{{ min }} Ar</p>
-      </div>
-  
-      <div class="carte carte-max">
-        <h2>Montant Maximum</h2>
-        <p>{{ max }} Ar</p>
-      </div>
-  
-      <div class="carte carte-total">
-        <h2>Montant Total</h2>
-        <p>{{ total }} Ar</p>
-      </div>
-  
-    </div>
-  
+  <!-- Titre de la page -->
+  <div class="page-titre">
+    <span class="material-icons">bar_chart</span>
+    <h1>Bilan des Produits</h1>
   </div>
+
+  <!-- Message d'erreur -->
+  <p *ngIf="message()" class="message-erreur">{{ message() }}</p>
+
+  <!-- Les 3 cartes -->
+  <div class="cartes">
+
+    <div class="carte carte-min">
+      <span class="material-icons">arrow_downward</span>
+      <h2>Montant Minimum</h2>
+      <p>{{ min() }} Ar</p>
+    </div>
+
+    <div class="carte carte-max">
+      <span class="material-icons">arrow_upward</span>
+      <h2>Montant Maximum</h2>
+      <p>{{ max() }} Ar</p>
+    </div>
+
+    <div class="carte carte-total">
+      <span class="material-icons">account_balance_wallet</span>
+      <h2>Montant Total</h2>
+      <p>{{ total() }} Ar</p>
+    </div>
+
+  </div>
+
+  <!-- Les graphiques -->
+  <div class="graphiques">
+
+    <div class="graphique-box">
+      <div class="graphique-titre">
+        <span class="material-icons">bar_chart</span>
+        <h2>Histogramme des montants</h2>
+      </div>
+      <canvas id="histogramme"></canvas>
+    </div>
+
+    <div class="graphique-box">
+      <div class="graphique-titre">
+        <span class="material-icons">pie_chart</span>
+        <h2>Camembert des produits</h2>
+      </div>
+      <canvas id="camembert"></canvas>
+    </div>
+
+  </div>
+
+</div>

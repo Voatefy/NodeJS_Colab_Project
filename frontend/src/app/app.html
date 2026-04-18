@@ -1,1 +1,9 @@
-<router-outlet />
+<div class="app-layout">
+
+    <app-navbar *ngIf="estConnecte()" />
+  
+    <div class="app-content" [class.avec-sidebar]="estConnecte()">
+      <router-outlet />
+    </div>
+  
+  </div>

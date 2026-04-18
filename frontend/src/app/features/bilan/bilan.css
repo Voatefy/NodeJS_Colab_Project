@@ -1,45 +1,121 @@
 .bilan-container {
-    padding: 30px;
-    font-family: Arial, sans-serif;
-  }
-  
-  h1 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 30px;
-  }
-  
-  .cartes {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .carte {
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-    min-width: 200px;
-    color: white;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  }
-  
-  .carte h2 {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  .carte p {
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .carte-min   { background-color: #3498db; }
-  .carte-max   { background-color: #e74c3c; }
-  .carte-total { background-color: #2ecc71; }
-  
-  .message-erreur {
-    color: red;
-    text-align: center;
-  }
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ───────────────────────────────
+   TITRE DE LA PAGE
+─────────────────────────────── */
+.page-titre {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.page-titre h1 {
+  font-size: 24px;
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.page-titre .material-icons {
+  font-size: 28px;
+  color: #3b82f6;
+}
+
+/* ───────────────────────────────
+   LES 3 CARTES
+─────────────────────────────── */
+.cartes {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.carte {
+  flex: 1;
+  min-width: 200px;
+  padding: 25px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.carte .material-icons {
+  font-size: 32px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.carte h2 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  opacity: 0.9;
+}
+
+.carte p {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.carte-min   { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+.carte-max   { background: linear-gradient(135deg, #ef4444, #b91c1c); }
+.carte-total { background: linear-gradient(135deg, #10b981, #065f46); }
+
+/* ───────────────────────────────
+   LES GRAPHIQUES
+─────────────────────────────── */
+.graphiques {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.graphique-box {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.graphique-titre {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.graphique-titre h2 {
+  font-size: 16px;
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.graphique-titre .material-icons {
+  color: #3b82f6;
+  font-size: 22px;
+}
+
+/* ───────────────────────────────
+   MESSAGE ERREUR
+─────────────────────────────── */
+.message-erreur {
+  color: #ef4444;
+  background: #fef2f2;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid #ef4444;
+}
+
+/* ───────────────────────────────
+   TAILLE DES GRAPHIQUES
+─────────────────────────────── */
+canvas {
+  max-height: 300px !important;
+}

@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+/* ───────────────────────────────
+   STYLES GLOBAUX
+─────────────────────────────── */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f5f9;
+    color: #333;
+  }
+  
+  /* ───────────────────────────────
+     LAYOUT PRINCIPAL
+  ─────────────────────────────── */
+  .app-layout {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .app-content {
+    flex: 1;
+    padding: 30px;
+  }
+  
+  .app-content.avec-sidebar {
+    margin-left: 220px;
+  }

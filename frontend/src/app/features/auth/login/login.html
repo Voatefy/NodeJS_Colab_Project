@@ -1,0 +1,19 @@
+<div class="login-container">
+
+    <h1>🔐 Connexion</h1>
+  
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" [(ngModel)]="email" placeholder="email@gmail.com" />
+    </div>
+  
+    <div class="form-group">
+      <label>Mot de passe</label>
+      <input type="password" [(ngModel)]="password" placeholder="••••••••" />
+    </div>
+  
+    <button (click)="seConnecter()">Se connecter</button>
+  
+    <p *ngIf="message" class="message-erreur">{{ message }}</p>
+  
+  </div>

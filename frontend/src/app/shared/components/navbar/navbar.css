@@ -1,0 +1,84 @@
+/* ───────────────────────────────
+   LA SIDEBAR PRINCIPALE
+─────────────────────────────── */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background-color: #1e293b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+
+  /* ───────────────────────────────
+   LES LIENS DE NAVIGATION
+─────────────────────────────── */
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0 10px;
+  }
+  
+  .sidebar-links a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    color: #94a3b8;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    transition: all 0.2s;
+  }
+
+  .sidebar-links a:hover {
+    background-color: #334155;
+    color: #ffffff;
+  }
+  
+  .sidebar-links a.actif {
+    background-color: #3b82f6;
+    color: #ffffff;
+  }
+  
+  .sidebar-links a .material-icons {
+    font-size: 20px;
+  }
+
+  /* ───────────────────────────────
+   BOUTON DÉCONNEXION EN BAS
+─────────────────────────────── */
+.sidebar-bottom {
+    padding: 0 10px;
+  }
+  
+  .sidebar-bottom button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 12px 15px;
+    background-color: transparent;
+    color: #94a3b8;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .sidebar-bottom button:hover {
+    background-color: #ef4444;
+    color: white;
+  }
+  
+  .sidebar-bottom button .material-icons {
+    font-size: 20px;
+  }
